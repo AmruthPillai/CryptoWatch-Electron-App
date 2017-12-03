@@ -23,5 +23,7 @@
     "electron": "^1.7.9",
     "electron-reload": "^1.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
 }

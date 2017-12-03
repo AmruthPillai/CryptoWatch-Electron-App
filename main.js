@@ -1,5 +1,8 @@
+// require('electron-reload')(__dirname, {
+//   electron: require('${__dirname}/../../node_modules/electron')
+// })
+
 const {app, BrowserWindow, Menu} = require('electron')
-require('electron-reload')(__dirname)
 const path = require('path')
 const shell = require('electron').shell
 const url = require('url')
