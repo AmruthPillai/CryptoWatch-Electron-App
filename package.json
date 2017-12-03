@@ -1,0 +1,25 @@
+{
+  "name": "cryptowatch-electron-app",
+  "version": "1.0.0",
+  "description": "A Bitcoin price alert app that will allow a user to set a price in order to receive a native desktop notification if the current price of Bitcoin exceeds the specified amount.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmruthPillai/CryptoWatch-Electron-App.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "im.amruth@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmruthPillai/CryptoWatch-Electron-App/issues"
+  },
+  "homepage": "https://github.com/AmruthPillai/CryptoWatch-Electron-App#readme",
+  "devDependencies": {
+    "electron": "1.7.9"
+  }
+}
