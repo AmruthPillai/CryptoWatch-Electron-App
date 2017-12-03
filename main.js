@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu} = require('electron')
 const path = require('path')
 const url = require('url')
 
@@ -27,6 +27,24 @@ function createWindow () {
     // when you should delete the corresponding element.
     win = null
   })
+
+  var menu = Menu.buildFromTemplate([
+      {
+      label: 'Menu',
+      submenu: [
+        { label: 'Adjust Notification Value' },
+        { label: 'Coin Market Cap' },
+        {
+          label: 'Exit',
+          click() {
+            app.quit()
+          }
+        }
+      ]
+    }
+  ])
+
+  Menu.setApplicationMenu(menu);
 }
 
 // This method will be called when Electron has finished
