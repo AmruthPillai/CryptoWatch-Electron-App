@@ -19,5 +19,8 @@
     "url": "https://github.com/AmruthPillai/CryptoWatch-Electron-App/issues"
   },
   "homepage": "https://github.com/AmruthPillai/CryptoWatch-Electron-App#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "electron": "^1.7.9"
+  },
+  "dependencies": {}
 }

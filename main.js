@@ -1,5 +1,6 @@
 const {app, BrowserWindow, Menu} = require('electron')
 const path = require('path')
+const shell = require('electron').shell
 const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -33,7 +34,13 @@ function createWindow () {
       label: 'Menu',
       submenu: [
         { label: 'Adjust Notification Value' },
-        { label: 'Coin Market Cap' },
+        {
+          label: 'Coin Market Cap',
+          click() {
+            shell.openExternal('http://coinmarketcap.com/')
+          }
+        },
+        { type: 'separator' },
         {
           label: 'Exit',
           click() {
